@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/index.css" />
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <main>
+    <article>
+      <!-- Rating state start -->
+      <section class="card-review" id="rating-start">
+        <form action="/index.html" method="POST" class="rating-form" id="rating-form">
+          <div class="star-container">
+            <img src="./images/icon-star.svg" width="17" height="16" alt="rate-us-star" />
+          </div>
+          <h1>How did we do?</h1>
+          <p class="body-copy">Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!</p>
+          <div class="rating-scale" id="rating-scale">
+            <div class="radio-container">
+              <input type="radio" value="1" name="rating" id="1" required />
+              <span class="custom-radio"></span>
+              <label for="1">1</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" value="2" name="rating" id="2" />
+              <span class="custom-radio"></span>
+              <label for="2">2</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" value="3" name="rating" id="3" />
+              <span class="custom-radio"></span>
+              <label for="3">3</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" value="4" name="rating" id="4" />
+              <span class="custom-radio"></span>
+              <label for="4">4</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" value="5" name="rating" id="5" />
+              <span class="custom-radio"></span>
+              <label for="5">5</label>
+            </div>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+      <!-- Thank you state start -->
+      <section class="card-review hideable-card centered-card" id="thank-you">
+        <figure class="image-container">
+          <img src="./images/illustration-thank-you.svg" alt="Processed review illustration" />
+        </figure>
+        <div class="rating-selection">
+          <p class="body-copy" id="rating-selected-description">You selected 4 out of 5</p>
+        </div>
+        <div class="thanks-description">
+          <h2>Thank you!</h2>
+          <p class="body-copy">We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!</p>
+        </div>
+        <!-- Thank you state end -->
+      </section>
+    </article>
+  </main>
+
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
